@@ -1,0 +1,81 @@
+.mainServices {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 60px;
+    padding: 20rem 0;
+}
+
+.mainServices::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1E5BFAD9;
+    z-index: 1;
+}
+
+.mobileHeader {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF !important;
+    z-index: 2;
+}
+
+.mobileHeader p {
+    color: #FFFFFF !important;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.schedulebtn{
+    background-color: white;
+    color: #1E5BFA;
+    padding: 12px 13.31px 12px 13.31px;
+    font-size: 20.52px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 450px) {
+
+    .mainServices{
+      padding: 5rem 0;
+    }
+
+    .mobileHeader p {
+        color: #FFFFFF !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .schedulebtn{
+        background-color: white;
+        color: #1E5BFA;
+        padding: 10px 10px 10px 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 7px;
+        font-weight: 600;
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .mainServices{
+        padding: 15rem 0;
+      }
+    
+}

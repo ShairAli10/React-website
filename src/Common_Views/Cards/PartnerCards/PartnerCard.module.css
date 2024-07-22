@@ -1,0 +1,121 @@
+.partnercard {
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0px 0px 47px 0px #00000014;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    margin: 5rem auto;
+}
+
+.partnercardimage {
+    flex: 0 0 30%;
+    position: relative;
+}
+
+
+.gradientleft::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #FFFFFF, #E2EAFF);
+    z-index: -1;
+    width: 50%;
+    left: 0;
+}
+
+.gradientright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #FFFFFF, #E2EAFF);
+    z-index: -1;
+    width: 50%;
+    right: 0;
+}
+
+.partnercardimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5rem;
+}
+
+.partnercardcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding: 0 5rem;
+}
+
+.partnercardcontent h1 {
+    font-size: 38.85px;
+    line-height: 63px;
+}
+
+.partnercardcontent p {
+    font-size: 26.17px;
+    line-height: 40px;
+    color: #000000B2;
+    padding-right: 4rem;
+}
+
+@media screen and (max-width: 599px) {
+    .partnercard {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .partnercardimage,
+    .partnercardcontent {
+       
+        padding: 1rem;
+    }
+
+    .partnercardimage img {
+        padding: 0;
+    }
+
+    .partnercardcontent h1 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .partnercardcontent p {
+        font-size: 7px;
+        line-height: 13px;
+        margin-bottom: 1rem;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .gradientleft::before,
+    .gradientright::before {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .partnercard {
+        width: 90%;
+    }
+
+    .partnercardcontent h1 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .partnercardcontent p {
+        font-size: 7px;
+        line-height: 13px;
+        margin-bottom: 1rem;
+        padding-right: 0;
+        width: 100%;
+    }
+}

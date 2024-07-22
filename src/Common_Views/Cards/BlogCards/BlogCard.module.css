@@ -1,0 +1,47 @@
+.blogCard {
+    width: 362px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blogImage {
+    width: 100%;
+    height: auto;
+}
+
+.blogContent {
+    padding: 20px;
+}
+
+.blogCategory {
+    font-size: 14px;
+    color: #555;
+}
+
+.blogTitle {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.blogDescription {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #777;
+}
+
+.blogDate {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+@media screen and (max-width: 450px) {
+    .blogCard {
+        width: 90%;
+        margin: 1rem auto;
+    }
+}

@@ -1,0 +1,139 @@
+.vertical-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 5rem 3rem;
+  position: relative;
+}
+
+.vertical-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+object {
+  position: absolute;
+  top: 32px;
+  right: -40px !important;
+}
+
+.vertical-card h3 {
+  font-size: 25px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.vertical-card p:first-child {
+  font-size: 16px;
+  line-height: 21.51px;
+  margin-bottom: 10px;
+  color: #00000080;
+}
+
+.vertical-card p:last-child {
+  font-size: 18px;
+  line-height: 21px;
+  color: #00000080;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 425px){
+  .vertical-card h3 {
+    font-size: 18.17px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .vertical-card p:first-child {
+    font-size: 14px;
+    line-height: 21.51px;
+    margin-bottom: 10px;
+    color: #00000080;
+  }
+  
+  .vertical-card p:last-child {
+    font-size: 12px;
+    line-height: 21px;
+    color: #00000080;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  object {
+    display: none !important;
+  }
+
+  .vertical-card {
+    text-align: center;
+    margin: 0;
+  }
+
+  .vertical-card img {
+    width: auto !important;
+  }
+
+  .vertical-card h3{
+    margin-bottom: 5rem;
+  }
+
+  .vertical-card p:last-child {
+   display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  object {
+    display: none !important;
+  }
+
+  .vertical-card {
+    text-align: center;
+    margin: 0;
+  }
+
+  .vertical-card img {
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  object {
+    display: none !important;
+  }
+
+  .vertical-card {
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vertical-card img {
+    
+    margin: 2rem;
+  }
+
+  .vertical-card h3{
+    margin-bottom: 5rem;
+  }
+
+  .vertical-card p:last-child {
+   width: 80%;
+   margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  object {
+    position: absolute;
+    top: 50px;
+    right: -40px !important;
+  }
+}
+
+

@@ -1,0 +1,173 @@
+.portfoliocard {
+    width: 90%;
+    height: fit-content;
+    box-shadow: 0px 0px 47px 0px #00000014;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    margin: 2rem auto;
+    border-radius: 24px;
+    background-color: white;
+}
+
+.portfoliocardimage {
+    flex: 0 0 30%;
+    position: relative;
+}
+
+.portfoliocardimage img {
+    height: 100%;
+    object-fit: cover;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.portfoliocardcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 399px) {
+    .portfoliocard {
+        width: 90%;
+    }
+
+    .portfoliocardcontent h2 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .portfoliocardcontent p {
+        font-size: 7px;
+        line-height: 13px;
+        margin-bottom: 1rem;
+        padding-right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfoliocard {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfoliocardimage {
+        flex: 0 0 auto;
+    }
+
+    .portfoliocardimage img {
+        width: 70%;
+        height: auto;
+        margin: 3rem 3rem 0 5rem;
+    }
+
+    .portfoliocardcontent {
+        padding: 0 1rem;
+    }
+
+    .portfoliocardcontent h2 {
+        font-size: 20px;
+    }
+
+    .portfoliocardcontent p {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .portfoliocardimage img {
+        margin: 2rem 3rem 30px 5rem !important;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .portfoliocard {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70% !important;
+    }
+
+    .portfoliocardimage {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+      
+    }
+
+    .portfoliocardimage img {
+        width: 50%;
+        height: auto;
+        margin: 2rem 0 0 0;
+
+    }
+
+    .portfoliocardcontent {
+        padding: 0 1rem;
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .portfoliocardcontent h2 {
+        font-size: 20px;
+    }
+
+    .portfoliocardcontent p {
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .portfoliocard {
+        width: 100% !important;
+    }
+
+    .portfoliocardcontent h2 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .portfoliocardcontent p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .portfoliocard {
+        width: 90%;
+    }
+
+    .portfoliocardcontent h2 {
+        font-size: 25px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .portfoliocardcontent p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 1rem;
+        padding-right: 0;
+        width: 100%;
+    }
+}
